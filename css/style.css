@@ -1,51 +1,87 @@
-body{
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgba(172, 55, 204, 0.767);
+    background-color: #6b4e74c4;
     color: black;
     text-align: center;
     cursor: help;
 }
-header{
-    background-color: rgb(83, 23, 195);
+
+header {
+    background-color: #6b4e74c4;
     color: black;
     padding: 20px 0;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: rgb(26, 148, 46);
+    background-color: #6b4e74c4;
     cursor: help;
 }
-nav ul li{
-    margin: 0;
+
+nav ul li {
+    margin-bottom: 10px;
     cursor: grab;
 }
-nav ul li a{
-    color: wheat;
+
+nav ul li a {
+    color: black;
+    transition: 0.3s ease;
     text-decoration: none;
     font-weight: bold;
-    padding: 10;
+    padding: 10px;
     display: inline-block;
     cursor: grab;
 }
-nav ul li a:hover, nav ul li a:active{
-    background-color: rgb(221, 224, 38);
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #6b4e74c4;
     border-radius: 5px;
     cursor: grab;
 }
-main{
-    max-width: 900x;
-    margin: 0;
+
+main {
+    width: 100%;  /* Zajistíme, že main bude mít plnou šířku */
+    max-width: 1200px;  /* Maximální šířka pro main obsah, aby nebyl příliš úzký */
+    margin: 0 auto;  /* Vycentrování hlavního obsahu */
     padding: 0 20px;
 }
-section{
-    background-color: rgb(245, 88, 25);
+
+section {
+    background-color: #ce96dfc4;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s;
     cursor: crosshair;
+}
+
+img {
+    width: 100%;  /* Nastavíme šířku na 100% pro flexibilitu */
+    max-width: 700px;  /* Maximální šířka obrázku */
+    height: auto;  /* Výška se přizpůsobí šířce */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  /* Přidání jemného stínu */
+    margin: 20px auto;  /* Vycentrování obrázku s automatickým okrajem */
+    display: block;  /* Aby se obrázek choval jako blokový prvek pro centrální zarovnání */
+}
+
+img:hover {
+    transform: scale(1.2);  /* Zvětšení obrázku na 120% */
+    z-index: 10;  /* Obrázek bude nad ostatními prvky */
+    position: relative;
+}
+
+button {
+    background-color: #4e0963c4;
+    color: #e2c7ebc4;
+    padding: 10px;
+    margin: 20px;
+    transition: 0.5s ease;
 }
