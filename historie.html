@@ -4,7 +4,8 @@
     <title>Historie města Tokyo</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
-    <script src="script.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-script.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 <body>
@@ -17,21 +18,20 @@
             <li><a href="historie.html"> Historie /</a></li>
             <li><a href="pamatky.html"> Památky</a></li>
         </ul>
-        <button id="ukazObrazky">Zobrazit</button>
+        <button id="ukazObrazky">Zobrazit obrázky</button>
     </nav>
     <main>
         <section>
-            
-            <img src="/img/HistoryTokyo.jpg" alt="Historické Tokyo" class="img">
-            <img src="/img/Tokyo.jpg">
             <h2>Od středověku po současnost</h2>
             <p>Toto město mnoha tváří je něčím, co si nepředstavíte ani v té nejbujnější fantazii, a co zkrátka musíte zažít. Alespoň jednou za život.</p>
             <p>Tokio se do roku 1868 jmenovalo Edo</p>
             <p>Jeho vývoj při kterém se z malé rybářské vesničky stalo během zhruba tisíce let současné velkoměsto se v něm událo mnoho událostí a katastrof.</p>
-            <p>Jen stěží si dovedeme představit, že ještě před šesti staletími byly na území dnešní metropole bažiny, pláně a maličká ospalá rybářská vesnička s názvem Edo.</p>
-            <p>V ní si roku 1457 nechal samuraj Óta Dókan postavit hrad. Stával na místě dnešního Císařského paláce. O více než století později si Edo vybral za své sídlo rod Tokugawa, který záhy vládnul celému Japonsku.</p>
-            <p>I přes jeho rozlohu a bohaté dějiny tak v dnešním Tokiu najdeme památek jako šafránu.</p>
-            <p>Na druhou stranu, v druhé polovině 20. století mělo město neopakovatelnou příležitost povstat z popela a doslova se znovu narodit v daleko modernější podobě.</p>
+            
+            <!-- Obrázky historického Tokya, které se na začátku skrývají -->
+            <div id="historieObrazky" class="hidden">
+                <img src="/img/HistoryTokyo.jpg" alt="Historické Tokyo" class="img">
+                <img src="/img/Tokyo.jpg" alt="Moderní Tokyo">
+            </div>
         </section>
     </main>
     <footer>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <script src="//code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="script.js"></script>
+    <script src="js/jquery-script.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 </head>
 <body>
@@ -13,21 +13,27 @@
         <h1>Památky Tokya</h1>
     </header>
     <main>
-    <nav>
-        <ul>
-            <li><a href="index.html">Domů /</a></li>
-            <li><a href="historie.html"> Historie /</a></li>
-            <li><a href="pamatky.html"> Památky</a></li>
-        </ul>
-        <button id="ukazObrazky">Zobrazit</button>
-    </nav>
-    
+        <nav>
+            <ul>
+                <li><a href="index.html">Domů /</a></li>
+                <li><a href="historie.html"> Historie /</a></li>
+                <li><a href="pamatky.html"> Památky</a></li>
+            </ul>
+            <button id="ukazObrazky">Zobrazit obrázky</button>
+        </nav>
+
         <section id="galeriePamatky">
-        <h2>Nejznámější památky města</h2>
-        <p>Tokyo Sensoji-ji Temple</p>
-        <img src="/img/Sensoji.jpg">
-        <p>Tokyo Shinjuku Garden</p>
-        <img src="/img/Shinjuku.jpg">
+            <h2>Nejznámější památky města</h2>
+            <p>Tokyo Sensoji-ji Temple</p>
+            <img src="/img/Sensoji.jpg" alt="Sensoji Temple">
+            <p>Tokyo Shinjuku Garden</p>
+            <img src="/img/Shinjuku.jpg" alt="Shinjuku Garden">
+            
+            <!-- Obrázky památek, které se na začátku skrývají -->
+            <div id="pamatkyObrazky" class="hidden">
+                <img src="/img/Sensoji.jpg" alt="Sensoji Temple">
+                <img src="/img/Shinjuku.jpg" alt="Shinjuku Garden">
+            </div>
         </section>
     </main>
     <footer>
